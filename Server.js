@@ -4,7 +4,7 @@ const app = express()
 
 const port = 8080 
 
-/*const Middleware=(req,res,next)=>{
+const Middleware=(req,res,next)=>{
 const date=new Date()
 const dayOfWeek = date.getDate()
 const hourOfDay= date.getHours()
@@ -17,7 +17,7 @@ const isWorkingHours = dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hou
 }
 
 app.use(Middleware)
-*/
+
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
